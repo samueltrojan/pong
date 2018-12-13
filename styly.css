@@ -1,0 +1,61 @@
+body {
+    background-color:black;
+    font-family: 'Abril Fatface', cursive;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: lawngreen;
+}
+#plocha {
+
+    width: 800px;
+    height: 600px;
+    border: solid 3px red;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.palka {
+    width: 50px;
+    height: 200px;
+    top: 200px;
+    background-color: lawngreen;
+    position: absolute;
+}
+#palka1 {
+    left: 0;
+}
+#palka2 {
+    right: 0;
+}
+#micek {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 290px;
+    left:390px ;
+    border-radius: 50%;
+}
+body.white #plocha{
+    background-color: black;
+}
+body.white .palka{
+    background-color: black;
+}
+#skore1, #skore2{
+    color: lawngreen;
+    font-size: 200px;
+    position: absolute;
+    top: 300px;
+}
+#skore1 {
+    left: 200px;
+}
+#skore2 {
+    right: 200px;
+
+
+}
