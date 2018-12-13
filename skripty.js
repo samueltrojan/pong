@@ -12,18 +12,12 @@ var provoz = true;
 var rychlost = 7;
 
 $(document).keydown(function(e) {
-    if (e.which == 87) {
-        smer1 = -1;
-    }
-    if (e.which == 83) {
-        smer1 = 1;
-    }
-
-    if (e.which == 38) {
-        smer2 = -1;
-    }
-    if (e.which == 40) {
-        smer2 = 1;
+    switch(e.which) {
+        case 87: smer1 = -1; break;
+        case 83: smer1 = 1; break;
+        case 38: smer2 = -1; break;
+        case 40: smer2 = 1; break;
+        default:
     }
 });
 $(document).keyup(function (e) {
