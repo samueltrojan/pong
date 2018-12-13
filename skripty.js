@@ -21,19 +21,19 @@ $(document).keydown(function(e) {
     }
 });
 $(document).keyup(function (e) {
-    if (e.which == 38 || e.which == 40) {
+    if (e.which === 38 || e.which === 40) {
         smer2 = 0;
     }
 });
 
 $(document).keyup(function (e) {
-    if (e.which == 87 || e.which == 83) {
+    if (e.which === 87 || e.which === 83) {
         smer1 = 0;
     }
 });
 
 setInterval(function () {
-    if (provoz == true) {
+    if (provoz === true) {
         // PALKY
         var top = parseInt($("#palka1").css("top"));
         $("#palka1").css("top", top + smer1 * 15);
@@ -87,7 +87,7 @@ setInterval(function () {
 },2000);
 
 function prohra() {
-    if (skore1 == 10 || skore2 == 10) {
+    if (skore1 === 10 || skore2 === 10) {
         skore1 = 0;
         skore2 = 0;
     }
